@@ -11,7 +11,7 @@
 - JavaScript
 
 # Project structure
-- rock.html` – Main game file
+- index.html` – Main game file
 - README.md` – Project documentation
 
 # Purpose
