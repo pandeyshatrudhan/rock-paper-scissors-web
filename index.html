@@ -44,10 +44,33 @@
             }
 
         }
+            var i=1
+           
+            function background(){
+                if(i%2==0){
+                document.body.style.backgroundColor="white"
+                document.getElementById("background").value="🌙"
+                document.getElementsByClassName("btnbackground")[0].style.backgroundColor="black"
+                i++
+                }
+                else{
+                    document.body.style.backgroundColor="black"
+                    document.getElementById("background").value="☀️"
+                    document.getElementsByClassName("btnbackground")[0].style.backgroundColor="white"
+                    i++
+                }
+            }
         
     </script>
     <style>
-        input{
+        body {
+            transition: background-color 0.5s ease;
+            margin: 30px;
+        }
+
+
+
+        .rockbtn{
             height: 100px;
             width:100px;
             border-radius: 200px;
@@ -56,6 +79,16 @@
             
             
         }
+        input{
+            height: 50px;
+            width:50px;
+            border-radius: 100px;
+            font-size: 25px;
+            background-color: black;
+            float: right;
+        }
+
+        
         .second{
             background-color: brown;
             font-size: 40px;
@@ -77,18 +110,19 @@
             border:5px solid green;
             
         }
-        
-        
     </style>
 </head>
 <body>
+    <input value="🌙" type="button"  class="btnbackground" id="background"  onclick="background()"><br>
     <center><span id="hader">
     Rock Paper Scissor Game
     </span></center>
+    <span>
+    </span>
     <div id="first">
-    <input onclick="rock()" type="button" value="🤜">
-    <input onclick="paper()" type="button" value="🖐️">
-    <input onclick="Scissors()" type="button" value="✌️">
+    <button onclick="rock()"  class="rockbtn" >🤜</button>
+    <button onclick="paper()"  class="rockbtn" >🖐️</button>
+    <button onclick="Scissors()"  class="rockbtn" >✌️</button>
     </div>
     <center> <span class="second"  id="ans"></span></center>
 
