@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function rock(){//rock=0,paper=1,Scissors=2;
+            user=0
+            computer=Math.floor(Math.random()*(2-0+1)+0);
+            if(user==computer){
+                document.getElementById("ans").innerHTML="Draw <br>"+"computer chocice=Rock"
+            }
+            else if( computer==2){
+                document.getElementById("ans").innerHTML="you win <br>"+"computer chocice=Scissors"
+            }
+            else if( computer==1){
+                document.getElementById("ans").innerHTML="you lose<br>"+"computer chocice=Paper"
+            }
+
+        }
+         function paper(){//rock=0,paper=1,Scissors=2;
+            user=1
+            computer=Math.floor(Math.random()*(2-0+1)+0);
+            if(user==computer){
+                document.getElementById("ans").innerHTML="Draw <br>"+"computer chocice=Paper"
+            }
+            else if(computer==2){
+                document.getElementById("ans").innerHTML="you lose <br>"+"computer chocice=Scissors"
+            }
+            else if( computer==0){
+                document.getElementById("ans").innerHTML="you win<br>"+"computer chocice=Rock"
+            }
+
+        }
+         function Scissors(){//rock=0,paper=1,Scissors=2;
+            user=2
+            computer=Math.floor(Math.random()*(2-0+1)+0);
+            if(user==computer){
+                document.getElementById("ans").innerHTML="Draw <br>"+"computer chocice=Scissors"
+            }
+            else if(computer==0){
+                document.getElementById("ans").innerHTML="you lose <br>"+"computer chocice=rock"
+            }
+            else if( computer==1){
+                document.getElementById("ans").innerHTML="you win<br>"+"computer chocice=Paper"
+            }
+
+        }
+        
+    </script>
+    <style>
+        input{
+            height: 100px;
+            width:100px;
+            border-radius: 200px;
+            font-size: 70px;
+            margin:50px;
+            
+            
+        }
+        .second{
+            background-color: brown;
+            font-size: 40px;
+            text-align: center;
+            font-style: oblique;
+            color:white;
+        }
+         #first{
+            
+            font-size: 20px;
+            text-align: center;
+        }
+        #hader{
+            color:white;
+            background-color: black;
+            font-size: 50px;
+            text-align: center;
+            font-style: italic;
+            border:5px solid green;
+            
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <center><span id="hader">
+    Rock Paper Scissor Game
+    </span></center>
+    <div id="first">
+    <input onclick="rock()" type="button" value="🤜">
+    <input onclick="paper()" type="button" value="🖐️">
+    <input onclick="Scissors()" type="button" value="✌️">
+    </div>
+    <center> <span class="second"  id="ans"></span></center>
+
+</body>
+</html>
