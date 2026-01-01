@@ -6,13 +6,13 @@
             user=0
             computer=Math.floor(Math.random()*(2-0+1)+0);
             if(user==computer){
-                document.getElementById("ans").innerHTML="Draw <br>"+"computer chocice=Rock"
+                document.getElementById("ans").innerHTML="Draw <br>"+"Computer Chocice:Rock"
             }
             else if( computer==2){
-                document.getElementById("ans").innerHTML="you win <br>"+"computer chocice=Scissors"
+                document.getElementById("ans").innerHTML="You Win <br>"+"Computer Chocice:Scissors"
             }
             else if( computer==1){
-                document.getElementById("ans").innerHTML="you lose<br>"+"computer chocice=Paper"
+                document.getElementById("ans").innerHTML="You Lose<br>"+"Computer Chocice:Paper"
             }
 
         }
@@ -20,13 +20,13 @@
             user=1
             computer=Math.floor(Math.random()*(2-0+1)+0);
             if(user==computer){
-                document.getElementById("ans").innerHTML="Draw <br>"+"computer chocice=Paper"
+                document.getElementById("ans").innerHTML="Draw <br>"+"Computer Chocice:Paper"
             }
             else if(computer==2){
-                document.getElementById("ans").innerHTML="you lose <br>"+"computer chocice=Scissors"
+                document.getElementById("ans").innerHTML="You Lose <br>"+"Computer Chocice:Scissors"
             }
             else if( computer==0){
-                document.getElementById("ans").innerHTML="you win<br>"+"computer chocice=Rock"
+                document.getElementById("ans").innerHTML="You Win<br>"+"Computer Chocice:Rock"
             }
 
         }
@@ -34,13 +34,13 @@
             user=2
             computer=Math.floor(Math.random()*(2-0+1)+0);
             if(user==computer){
-                document.getElementById("ans").innerHTML="Draw <br>"+"computer chocice=Scissors"
+                document.getElementById("ans").innerHTML="Draw <br>"+"computer chocice:Scissors"
             }
             else if(computer==0){
-                document.getElementById("ans").innerHTML="you lose <br>"+"computer chocice=rock"
+                document.getElementById("ans").innerHTML="You Lose <br>"+"computer chocice:rock"
             }
             else if( computer==1){
-                document.getElementById("ans").innerHTML="you win<br>"+"computer chocice=Paper"
+                document.getElementById("ans").innerHTML="You Win<br>"+"computer chocice:Paper"
             }
 
         }
@@ -89,12 +89,12 @@
         }
 
         
-        .second{
-            background-color: brown;
+        .ansbackground{
+            background-color:#FFFDE1;
             font-size: 40px;
             text-align: center;
-            font-style: oblique;
-            color:white;
+            font-style: Roboto;
+            color:#93BD57;
         }
          #first{
             
@@ -102,12 +102,13 @@
             text-align: center;
         }
         #hader{
-            color:white;
-            background-color: black;
+            color:#061E29;
+            background-color: #FFFDE1;
             font-size: 50px;
             text-align: center;
-            font-style: italic;
-            border:5px solid green;
+            font-style: Inter;
+            border:5px solid #1D546D;
+            border-radius: 12px;
             
         }
     </style>
@@ -115,7 +116,7 @@
 <body>
     <input value="🌙" type="button"  class="btnbackground" id="background"  onclick="background()"><br>
     <center><span id="hader">
-    Rock Paper Scissor Game
+     Rock Paper Scissor Game 
     </span></center>
     <span>
     </span>
@@ -124,7 +125,7 @@
     <button onclick="paper()"  class="rockbtn" >🖐️</button>
     <button onclick="Scissors()"  class="rockbtn" >✌️</button>
     </div>
-    <center> <span class="second"  id="ans"></span></center>
+    <center> <span class="ansbackground"  id="ans"></span></center>
 
 </body>
 </html>
