@@ -2,13 +2,13 @@
             user=0
             computer=Math.floor(Math.random()*(2-0+1)+0);
             if(user==computer){
-                document.getElementById("ans").innerHTML="Draw <br>"+"Computer Chocice:Rock"
+                document.getElementById("ans").innerHTML="Draw 🤝 <br>"+"Computer Chocice:Rock"
             }
             else if( computer==2){
-                document.getElementById("ans").innerHTML="You Win <br>"+"Computer Chocice:Scissors"
+                document.getElementById("ans").innerHTML="You Win 🎉<br>"+"Computer Chocice:Scissors"
             }
             else if( computer==1){
-                document.getElementById("ans").innerHTML="You Lose<br>"+"Computer Chocice:Paper"
+                document.getElementById("ans").innerHTML="You Lose 😞<br>"+"Computer Chocice:Paper"
             }
 
         }
@@ -16,13 +16,13 @@
             user=1
             computer=Math.floor(Math.random()*(2-0+1)+0);
             if(user==computer){
-                document.getElementById("ans").innerHTML="Draw <br>"+"Computer Chocice:Paper"
+                document.getElementById("ans").innerHTML="Draw 🤝<br>"+"Computer Chocice:Paper"
             }   
             else if(computer==2){
-                document.getElementById("ans").innerHTML="You Lose <br>"+"Computer Chocice:Scissors"
+                document.getElementById("ans").innerHTML="You Lose 😞 <br>"+"Computer Chocice:Scissors"
             }
             else if( computer==0){
-                document.getElementById("ans").innerHTML="You Win<br>"+"Computer Chocice:Rock"
+                document.getElementById("ans").innerHTML="You Win🎉<br>"+"Computer Chocice:Rock"
             }
 
         }
@@ -30,13 +30,13 @@
             user=2
             computer=Math.floor(Math.random()*(2-0+1)+0);
             if(user==computer){
-                document.getElementById("ans").innerHTML="Draw <br>"+"computer chocice:Scissors"
+                document.getElementById("ans").innerHTML="Draw 🤝 <br>"+"computer chocice:Scissors"
             }
             else if(computer==0){
-                document.getElementById("ans").innerHTML="You Lose <br>"+"computer chocice:rock"
+                document.getElementById("ans").innerHTML="You Lose 😞 <br>"+"computer chocice:rock"
             }
             else if( computer==1){
-                document.getElementById("ans").innerHTML="You Win<br>"+"computer chocice:Paper"
+                document.getElementById("ans").innerHTML="You Win🎉<br>"+"computer chocice:Paper"
             }
 
         }

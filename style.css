@@ -44,6 +44,7 @@ body {
             font-style: Inter;
             border:5px solid #1D546D;
             border-radius: 12px;
+            margin-left: 50px;
             
         }
         .rules-content {
@@ -91,4 +92,9 @@ body {
  #ruledesign{
     font-size: 25px;
  }
-
+.rockbtn:hover {
+    transform: translateY(-10px);
+    box-shadow: 4px 8px 12px rgba(0, 0, 0, 0.4); 
+    background-color: rgb(228, 217, 99) ;
+    
+}
