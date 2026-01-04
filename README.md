@@ -11,8 +11,10 @@
 - JavaScript
 
 # Project structure
-- index.html` – Main game file
-- README.md` – Project documentation
+- index.html -Main HTML file (UI structure)
+- style.css  -All styling
+- script.js  -Game logic
+- README.md` –Project documentation
 
 # Purpose
 - This project was created for learning and practice purposes as part of my web development journey.
