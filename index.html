@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <input value="🌙" type="button"  class="btnbackground" id="background"  onclick="background()"><br>
@@ -15,6 +16,31 @@
     <button onclick="Scissors()"  class="rockbtn" >✌️</button>
     </div>
     <center> <span class="ansbackground"  id="ans"></span></center>
+
+    <div  class="rules-modal">
+        <div class="rules-content" id="ruledesign">
+                <u><h2 style="color:pink">How to play</h2></u>
+                <ul>
+                  <li>Click <strong>Start</strong> to begin the game.</li>
+                  <li>Choose one option:</li>
+                  <ul>
+                  <li>🤜 Rock</li>
+                  <li>🖐️ Paper</li>
+                  <li>✌️ Scissors</li>
+                  </ul>
+                  <li>The computer will make a random choice.</li>
+                  <li>Result (<strong>Win / Lose / Draw</strong>) will appear on the screen.</li>
+                  <li>Click any option again to play the next round.</li>
+                </ul>
+
+            <div class="row">
+                <button  class="skip-button">Start</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
 
 </body>
 </html>

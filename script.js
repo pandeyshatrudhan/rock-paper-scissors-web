@@ -17,7 +17,7 @@
             computer=Math.floor(Math.random()*(2-0+1)+0);
             if(user==computer){
                 document.getElementById("ans").innerHTML="Draw <br>"+"Computer Chocice:Paper"
-            }
+            }   
             else if(computer==2){
                 document.getElementById("ans").innerHTML="You Lose <br>"+"Computer Chocice:Scissors"
             }
@@ -56,4 +56,16 @@
                     i++
                 }
             }
-            
+           
+window.onload = function () {
+    const rulesModal = document.querySelector('.rules-modal');
+    const skipButton = document.querySelector('.skip-button');
+
+    // show rules on load
+    rulesModal.style.display = 'flex';
+
+    skipButton.addEventListener('click', () => {
+        rulesModal.style.display = 'none';
+    });
+};
+
